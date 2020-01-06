@@ -1,3 +1,5 @@
+package AsteroidClicker;
+
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.StateBasedGame;
 
@@ -14,7 +16,7 @@ public class MainGame extends StateBasedGame {
     }
 
     public static void main(String args[]) throws SlickException {
-        MainGame game = new MainGame("Testing Game");
+        MainGame game = new MainGame("Asteroid Clicker");
         AppGameContainer app = new AppGameContainer(game);
         app.setDisplayMode(800, 600, false);
         app.setShowFPS(false);
