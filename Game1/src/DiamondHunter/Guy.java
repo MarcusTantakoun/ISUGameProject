@@ -29,7 +29,7 @@ public class Guy {
         dir = 3;
     }
 
-    public void move(Input in, ArrayList<Rectangle> walls) {
+    public void move(Input in, ArrayList<Rectangle> walls){
         stopped = false;
         int guyx = (int) hitbox.getX();
         int guyy = (int) hitbox.getY();

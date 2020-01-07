@@ -16,7 +16,8 @@ public class mainGame extends BasicGameState {
     ArrayList<GameObject> diamonds = new ArrayList();
     terrain terr;
     GameObject house;
-    GameObject ghost, ghost2;
+    GameObject ghost;
+    GameObject ghost2;
 
     public void init(GameContainer gc, StateBasedGame sbg) throws SlickException {
         guy = new Guy(0, 170);
