@@ -1,19 +1,22 @@
+package KeyboardHitman;
+
 
 import java.util.ArrayList;
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.Rectangle;
 
-abstract public class parentObject {
+abstract public class enemyParentObject {
 
     protected Rectangle hitbox;
     protected Image image;
 
-    public parentObject(int x, int y, String imgname) throws SlickException {
+    public enemyParentObject(int x, int y, String imgname) throws SlickException {
         image = new Image(imgname);
         hitbox = new Rectangle(x, y, image.getHeight(), image.getWidth());
     }
     
     abstract public void move(ArrayList<Rectangle> barriers);
+    abstract public void randomWords();
     
     public void draw(){
         image.draw(hitbox.getX(), hitbox.getY());

@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package OfficialGame;
+package KeyboardHitman;
 
 /**
  *
- * @author mtant
+ * @author marc6250
  */
-public class menuScreen {
+public class wordClass {
     
 }
