@@ -1,43 +1,33 @@
+package KeyboardHitman;
 
-import KeyboardHitman.enemyParentObject;
-import org.newdawn.slick.*;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
+import org.newdawn.slick.Input;
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.state.BasicGameState;
+import org.newdawn.slick.state.StateBasedGame;
+import org.newdawn.slick.state.transition.FadeInTransition;
+import org.newdawn.slick.state.transition.FadeOutTransition;
 
-public class realGame extends BasicGame {
-    
-   // int timer = 0; // timer that spawns enemies in
-    //int lives = 3; //three lives
-    //int RIGHT = 0; //if the word is inputted correctly 5 times, then live++;
-    //main player
-   // playerClass player;
-    //three different types of enemies
-    //enemyParentObject enemy1;
-    //enemyParentObject enemy2;
-    
-    public realGame(String title) {
-        super(title);
+public class realGame extends BasicGameState {
+
+    private String typing;
+
+    public void init(GameContainer gc, StateBasedGame sbg) throws SlickException {
+       
     }
 
-    public void init(GameContainer gc) throws SlickException {
-        //player = new playerClass(0, 170);
-        //enemy1 = new enemyOne(100, 170, "images/ghost.png");
-        //enemy2 = new enemyTwo(700, 170, "images/ghost.png");
-    }
-
-    public void update(GameContainer gc, int i) throws SlickException {
+    public void update(GameContainer gc, StateBasedGame sbg, int i) throws SlickException {
         
     }
 
-    public void render(GameContainer gc, Graphics g) throws SlickException {
-        
+    public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException {
+       
     }
 
-    public static void main(String args[]) throws SlickException {
-        realGame game = new realGame("Keyboad Hitman");
-        AppGameContainer app = new AppGameContainer(game);
-        app.setDisplayMode(500, 900, false);
-        app.setShowFPS(false);
-        app.setTargetFrameRate(100);
-        app.start();
+    public int getID() {
+        return 1;
     }
 
 }

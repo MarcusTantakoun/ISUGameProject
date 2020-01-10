@@ -20,14 +20,6 @@ public class playerClass {
         hitbox = new Rectangle(x, y, 50, 66);
     }
 
-    public void update(GameContainer gc, int i) throws SlickException {
-
-    }
-
-    public void render(GameContainer gc, Graphics g) throws SlickException {
-        ani.draw(220, 820);
-    }
-
     public boolean isHitting(ArrayList<Rectangle> rect) {
         for (Rectangle r : rect) {
             if (hitbox.intersects(r)) {
@@ -39,5 +31,9 @@ public class playerClass {
 
     public boolean isHitting(GameObject go) {
         return hitbox.intersects(go.getHitbox());
+    }
+
+    public void draw() {
+        
     }
 }

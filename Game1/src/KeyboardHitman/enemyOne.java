@@ -5,10 +5,10 @@ import java.util.Random;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.geom.Rectangle;
 
-
 public class enemyOne extends enemyParentObject{
     
-    int xdir, ydir, target;
+    boolean shieldDown = false;
+    int xdir, ydir;
 
     public enemyOne(int x, int y, String imgname) throws SlickException {
         super(x, y, imgname);
@@ -18,21 +18,12 @@ public class enemyOne extends enemyParentObject{
     }
 
     public void move(ArrayList<Rectangle> barriers) {
-        int x = (int) hitbox.getX();
-        int y = (int) hitbox.getY();
-        
-        x+=xdir;
-        y+=ydir;
-        
-        hitbox.setY(y);
-        hitbox.setX(x);
+        ydir++;
+        hitbox.setY(ydir);
     }
-
-    @Override
-    public void randomWords() {
-         String[]arr = {"Man", "yett", "crazy"};
-         Random random = new Random();
-         int select = random.nextInt(arr.length);
-    }
+    
+    //public void doubleWord(){
+        //if()
+    //}
     
 }
