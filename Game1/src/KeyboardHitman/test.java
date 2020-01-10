@@ -10,7 +10,9 @@ public class test {
         Random random = new Random();
         int select = random.nextInt(arr.length);
          
-         System.out.println("Random String selected: " + arr[select]);
+        System.out.println("Random String selected: " + arr[select]);
+        
+        
     }
     
 }
